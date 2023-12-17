@@ -55,7 +55,7 @@ for (int i = 0; i < matrix.GetLength(0); i++)
 }
 
 System.Console.WriteLine();
-System.Console.WriteLine($"Минимальный элемент матрицы равен {minElement}, его адрес - [ {minRow}, {minCol} ]");
+System.Console.WriteLine($"Минимальный элемент матрицы равен {minElement},\nего адрес - [ {minRow}, {minCol} ]");
 System.Console.WriteLine();
 
 for (int i = 0, ii = 0; i < matrix.GetLength(0); i++)
@@ -82,9 +82,7 @@ for (int i = 0; i < matrix.GetLength(0); i++)
             newRow++;
             newCol++;
         }
-
     }
-
 } */
 
 System.Console.WriteLine($"Результирующий массив:");
