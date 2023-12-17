@@ -3,7 +3,7 @@
 
 // Задача 4*(не обязательная): Задайте двумерный массив из целых чисел. Напишите программу, которая удалит строку и столбец, на пересечении которых расположен наименьший элемент массива. Под удалением понимается создание нового двумерного массива без строки и столбца
 
-int[,] FillArray()
+int[,] GetRandom2DArray()
 {
     Random rnd = new Random();
     int row = rnd.Next(2, 11);
@@ -31,10 +31,7 @@ void PrintArray(int[,] matrix)
     }
 }
 
-// Random rnd = new Random();
-// int row = rnd.Next(2, 11);
-// int col = rnd.Next(2, 11);
-int[,] matrix = FillArray();
+int[,] matrix = GetRandom2DArray();
 
 Console.Clear();
 System.Console.WriteLine("Массив matrix:");
@@ -73,7 +70,6 @@ for (int i = 0, ii = 0; i < matrix.GetLength(0); i++)
     ii++;
 }
 
-
 /* int newRow = 0;
 int newCol = 0;
 for (int i = 0; i < matrix.GetLength(0); i++)
@@ -90,8 +86,6 @@ for (int i = 0; i < matrix.GetLength(0); i++)
     }
 
 } */
-
-
 
 System.Console.WriteLine($"Результирующий массив:");
 System.Console.WriteLine();
